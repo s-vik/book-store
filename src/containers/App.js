@@ -1,10 +1,9 @@
-
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import App from './../components/App';
-import * as booksAction from '../actions/books';
-import { bindActionCreators } from 'redux';
 
 import orderBy from 'lodash/orderBy';
+import { getBooks } from '../reducers/books';
 
 
 const filterWithLodash = (books, filterBy) => {
@@ -35,15 +34,25 @@ const searchBooks = (books, filterBy, searchQuery) => {
   return filterWithLodash(queryFilter(books,searchQuery),filterBy);
 }
 
+
+class AppContainer extends Component {
+  componentDidMount() {
+    this.props.getBooks();
+  }
+
+  render() {
+    return (
+      <App {...this.props}/>
+    )
+  }
+}
+
+
 const mapStateToProps = ({books, filter}) => {
   return {
     books: books.books && searchBooks(books.books, filter.filterBy,filter.searchQuery) ,
     isReady: books.isReady
   }
 }
-const mapDispatchToProps = (dispatch) => {
-  return {
-    ...bindActionCreators(booksAction, dispatch)
-  }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+export default connect(mapStateToProps, {getBooks})(AppContainer);

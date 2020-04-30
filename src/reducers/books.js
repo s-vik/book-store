@@ -1,3 +1,7 @@
+import { booksAPI } from "../api/api"
+import { setBooks } from "../actions/books"
+
+
 const initialState = {
     isReady: false,
     books: null
@@ -15,3 +19,12 @@ export default (state = initialState, action) => {
             return state
     }
 }
+
+
+export const getBooks = () => (
+    (dispatch) => {
+        booksAPI.getBooks().then(({ data }) => {
+            dispatch(setBooks(data));
+          })
+    }
+)
