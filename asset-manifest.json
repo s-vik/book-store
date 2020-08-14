@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/test_task/static/css/main.f310028a.chunk.css",
+    "main.js": "/test_task/static/js/main.4e0906f9.chunk.js",
+    "main.js.map": "/test_task/static/js/main.4e0906f9.chunk.js.map",
+    "runtime-main.js": "/test_task/static/js/runtime-main.da0c5393.js",
+    "runtime-main.js.map": "/test_task/static/js/runtime-main.da0c5393.js.map",
+    "static/css/2.02967a7d.chunk.css": "/test_task/static/css/2.02967a7d.chunk.css",
+    "static/js/2.f9e554f6.chunk.js": "/test_task/static/js/2.f9e554f6.chunk.js",
+    "static/js/2.f9e554f6.chunk.js.map": "/test_task/static/js/2.f9e554f6.chunk.js.map",
+    "index.html": "/test_task/index.html",
+    "precache-manifest.66987c180df14662329baf243318cacc.js": "/test_task/precache-manifest.66987c180df14662329baf243318cacc.js",
+    "service-worker.js": "/test_task/service-worker.js",
+    "static/css/2.02967a7d.chunk.css.map": "/test_task/static/css/2.02967a7d.chunk.css.map",
+    "static/css/main.f310028a.chunk.css.map": "/test_task/static/css/main.f310028a.chunk.css.map",
+    "static/js/2.f9e554f6.chunk.js.LICENSE.txt": "/test_task/static/js/2.f9e554f6.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/test_task/static/media/outline-icons.ef60a4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da0c5393.js",
+    "static/css/2.02967a7d.chunk.css",
+    "static/js/2.f9e554f6.chunk.js",
+    "static/css/main.f310028a.chunk.css",
+    "static/js/main.4e0906f9.chunk.js"
+  ]
+}
